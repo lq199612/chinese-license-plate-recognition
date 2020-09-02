@@ -6,15 +6,14 @@ import platform
 linux_directory_name = 'sourceFiles'
 windows_directory_name = './sourceFiles'
 
-
+# 设置不同系统下的directory_name
 if platform.system().lower() == 'windows':
     PATH = windows_directory_name
 elif platform.system().lower() == 'linux' or platform.system().lower() == 'darwin':
     PATH = linux_directory_name
 
-# note: window下运行程序 请更改main.py和charRecognition.py内的PATH为window_directory_name
 
-# linux: directory_name = 'sourceFiles' , window: directory_name = './sourceFiles'
+
 def get_imgs_list(directory_name = 'sourceFiles', default_file_name = 'all_cor_img_file.json',imgs_num=100):
     imgs_list = []
     files = os.listdir(directory_name)
@@ -35,9 +34,7 @@ def get_imgs_list(directory_name = 'sourceFiles', default_file_name = 'all_cor_i
     return imgs_list
 
 
-
+# 获取图像列表
 imgs_list = get_imgs_list(directory_name=PATH,imgs_num=10)
-# print(len(imgs_list))
+# 做检测
 filterImg.recognition_list(imgs_list)
-lis = filterImg.get_json_from_file('./sourceFiles/all_cor_img_file.json')
-print(len(lis))
