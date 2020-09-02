@@ -31,7 +31,7 @@
 #### 文件说明
 
 + data_one，data_two，data_three 这是三个数据集文件，大概1400张车牌图像
-
++ templateFiles 存放字符模板数据集
 + detectedPic里存放的是三个数据集里可定位车牌的图像，大概370张
 + sourceFiles里存放的是车牌识别正确的图像以及字符识别率高的图像
 + imgLocationAndSplit.py用于车牌定位和字符分割
