@@ -1,0 +1,17 @@
+.
+├── data_one
+├── data_three
+├── data_two
+├── detectedPic
+├── sourceFiles
+├── templateFiles
+├── charRecognition.py
+├── fileTree.txt
+├── filterImg.py
+├── imgLocationAndSplit.py
+├── log.txt
+├── main.py
+├── requestments.txt
+└── util.py
+
+7 directories, 8 files
