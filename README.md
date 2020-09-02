@@ -26,7 +26,7 @@
 
 ```
 
-进入到程序目录后，运行`python3 main.py`。
+进入到程序目录后安装依赖`pip install -r requestments.txt`，运行`python3 main.py`。或者使用容器运行程序。
 
 #### 文件说明
 
